@@ -8,7 +8,7 @@ st.set_page_config(
 )
 
 #Ruta a la Imagen del Logo
-LOGO_PATH = "./assets/logo_golego.png"
+LOGO_PATH = "OIP5.jpg"
 
 
 # SECCIÓN HOME PAGE
@@ -51,4 +51,5 @@ mediante entradas sencillas (sliders y menús) y devuelve instantáneamente la d
 reglamentaria y la señal de arbitraje visual correcta.
 
 *¡Nunca más dudarás de la regla de los 3 pasos!*
+
 """)
