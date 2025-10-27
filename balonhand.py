@@ -13,7 +13,7 @@ LOGO_PATH = "OIP5.jpg"
 
 # SECCIÓN HOME PAGE
 
-st.image("OIP5.jpg", LOGO_PATH, width=150)
+st.image("OIP5.jpg")
 st.title("GOL-EGO: Tu Guía Rápida de Reglas de Handball")
 st.markdown("---")
 
@@ -58,5 +58,6 @@ st.image("OIP1.jpg")
 st.image("juego-de-balonmano.jpg")
 
 st.video("https://youtu.be/QxyPbPZxf9A?si=vQ94k8VVCBWLjRZN")
+
 
 
