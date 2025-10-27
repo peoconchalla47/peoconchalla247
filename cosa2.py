@@ -112,6 +112,7 @@ if decision:
     
     # Muestra la imagen de la señal correspondiente
     if senial_clave in SEÑALES:
-        st.image(SEÑALES[senial_clave], caption=senial_clave, width=250)
+        st.image("oip8.jpg", caption=senial_clave, width=250)
+
 
 
