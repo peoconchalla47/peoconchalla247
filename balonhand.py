@@ -13,7 +13,7 @@ LOGO_PATH = "OIP5.jpg"
 
 # SECCIÓN HOME PAGE
 
-st.image(LOGO_PATH, width=150)
+st.image("OIP5.jpg", width=150)
 st.title("GOL-EGO: Tu Guía Rápida de Reglas de Handball")
 st.markdown("---")
 
@@ -53,3 +53,4 @@ reglamentaria y la señal de arbitraje visual correcta.
 *¡Nunca más dudarás de la regla de los 3 pasos!*
 
 """)
+
