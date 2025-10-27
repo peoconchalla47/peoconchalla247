@@ -16,7 +16,7 @@ LOGO_PATH = "OIP5.jpg"
 st.image("OIP5.jpg", width=150)
 st.title("GOL-EGO: Tu Guía Rápida de Reglas de Handball")
 st.markdown("---")
-
+st.video("https://youtu.be/QxyPbPZxf9A?si=vQ94k8VVCBWLjRZN")
 
 #Problema a Resolver 
 st.header("1. El Problema: Confusión en la Cancha ")
@@ -57,3 +57,4 @@ reglamentaria y la señal de arbitraje visual correcta.
 st.image("OIP2.jpg")
 st.image("OIP1.jpg")
 st.image("juego-de-balonmano.jpg")
+
