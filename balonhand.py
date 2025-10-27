@@ -3,7 +3,7 @@ import streamlit as st
 #Configuración de la Página de Inicio 
 st.set_page_config(
     page_title="Gol-Ego: El Árbitro Virtual de Handball",
-    page_icon="./assets/logo_golego.png",
+    page_icon="descarga.jpg",
     layout="wide"
 )
 
@@ -58,3 +58,4 @@ st.image("OIP1.jpg")
 st.image("juego-de-balonmano.jpg")
 
 st.video("https://youtu.be/QxyPbPZxf9A?si=vQ94k8VVCBWLjRZN")
+
