@@ -39,7 +39,7 @@ st.write("""
 - **Estilo de Vida:** Activo, siempre con su teléfono para revisar información deportiva.
 - **Problema:** En el calor del juego, olvida la señal de arbitraje correcta o duda si la falta amerita un 'Golpe Franco' o una 'Exclusión'.
 """)
-
+st.video("https://youtu.be/QxyPbPZxf9A?si=vQ94k8VVCBWLjRZN")
 st.markdown("---")
 
 #Solución de la Aplicación
@@ -211,3 +211,4 @@ st.write(personajes[opcion])
 
 # Mensaje final
 st.success("🎉 ¡Juntos forman un gran equipo lleno de talento y amistad! 🎉")
+
