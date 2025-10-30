@@ -8,12 +8,9 @@ import streamlit as st
 #Configuración de la Página de Inicio 
 st.set_page_config(
     page_title="Gol-Ego: El Árbitro Virtual de Handball",
-    page_icon="./assets/logo_golego.png",
+    page_icon="./logo_golego.png",
     layout="wide"
 )
-
-#Ruta a la Imagen del Logo
-LOGO_PATH = "./assets/logo_golego.png"
 
 
 # SECCIÓN HOME PAGE
@@ -171,10 +168,10 @@ st.subheader("Ingresa la situación y Gol-Ego te da la decisión.")
 #Datos de Sanciones y Señales
 # Diccionario para mapear la decisión a la imagen de la señal
 SEÑALES = {
-    "Golpe Franco": "./assets/senial_golpefranco.png",
-    "Exclusión (2 min)": "./assets/senial_exclusion.png",
-    "Lanzamiento de 7 metros": "./assets/senial_7metros.png",
-    "Continuar Juego": "./assets/logo_golego.png" # Usamos el logo para 'continuar'
+    "Golpe Franco": "senial_golpefranco.png",
+    "Exclusión (2 min)": "senial_exclusion.png",
+    "Lanzamiento de 7 metros": "senial_7metros.png",
+    "Continuar Juego": "logo_golego.png" # Usamos el logo para 'continuar'
 }
 
 #ENTRADAS DEL USUARIO
@@ -189,5 +186,6 @@ with st.sidebar:
     )
 
 st.markdown("---")
+
 
 #LÓGICA DE LA APLICACIÓN
