@@ -151,6 +151,8 @@ elif opcion_seleccionada == "Visualización de Datos":
     st.caption("Ubicaciones de lanzamiento simuladas en la cancha.")
 
 st.divider()
+st.image("OIP5.jpg")
+st.image("oip8.jpg")
 
 # --- Pie de Página ---
 st.markdown("---")
@@ -184,7 +186,7 @@ with st.sidebar:
     )
 
 st.markdown("---")
-
+st.image("OIP1.jpg")
 
 #LÓGICA DE LA APLICACIÓN
 
@@ -211,4 +213,5 @@ st.write(personajes[opcion])
 
 # Mensaje final
 st.success("🎉 ¡Juntos forman un gran equipo lleno de talento y amistad! 🎉")
+
 
