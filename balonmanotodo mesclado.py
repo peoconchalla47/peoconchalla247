@@ -188,5 +188,26 @@ st.markdown("---")
 
 #LÓGICA DE LA APLICACIÓN
 
+import streamlit as st
 
+# Título principal
+st.title("✨ Quiénes somos ✨")
+st.write("Conoce a nuestros cuatro personajes: **Sofía**, **Carolina**, **Maite** y **Javier**.")
 
+# Diccionario con la información de los personajes
+personajes = {
+"Sofía": "Sofía es una persona creativa y curiosa. Le encanta el arte y siempre busca nuevas ideas para inspirarse.",
+"Carolina": "Carolina es muy responsable y organizada. Siempre tiene todo bajo control y ayuda a los demás a mantenerse enfocados.",
+"Maite": "Maite es alegre y sociable. Tiene una gran energía positiva y siempre encuentra la manera de hacer reír a sus amigos.",
+"Javier": "Javier es tranquilo y reflexivo. Le gusta aprender cosas nuevas y disfrutar de una buena conversación."
+}
+
+# Selector para elegir el personaje
+opcion = st.selectbox("Selecciona un personaje para conocerlo:", list(personajes.keys()))
+
+# Mostrar la descripción correspondiente
+st.subheader(f"👤 {opcion}")
+st.write(personajes[opcion])
+
+# Mensaje final
+st.success("🎉 ¡Juntos forman un gran equipo lleno de talento y amistad! 🎉")
