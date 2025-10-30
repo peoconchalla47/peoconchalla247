@@ -190,6 +190,38 @@ st.image("OIP1.jpg")
 
 #LÓGICA DE LA APLICACIÓN
 
+# Programa de control de partido de handball para árbitros
+
+def mostrar_menu():
+    print("\n--- PANEL DEL ÁRBITRO ---")
+    print("1. Registrar gol")
+    print("2. Registrar sanción")
+    print("3. Mostrar marcador")
+    print("4. Cambiar de tiempo")
+    print("5. Finalizar partido")
+    print("--------------------------")
+
+def registrar_gol(equipos, marcador):
+    equipo = input(f"¿Qué equipo anotó ({equipos[0]} / {equipos[1]})?: ").strip()
+    if equipo in equipos:
+        marcador[equipo] += 1
+        print(f"✅ Gol para {equipo}! Marcador: {equipos[0]} {marcador[equipos[0]]} - {marcador[equipos[1]]} {equipos[1]}")
+    else:
+        print("⚠️ Equipo no válido.")
+
+def registrar_sancion(sanciones, equipos):
+    equipo = input(f"¿A qué equipo pertenece el jugador sancionado ({equipos[0]} / {equipos[1]})?: ").strip()
+    jugador = input("Número o nombre del jugador: ").strip()
+    tipo = input("Tipo de sanción (advertencia / exclusión / descalificación): ").strip().lower()
+    sanciones.append({"equipo": equipo, "jugador": jugador, "tipo": tipo})
+    print(f"🚨 Sanción registrada: {jugador} ({equipo}) - {tipo.upper()}")
+
+def mostrar_marcador(equipos, marcador, tiempo_actual):
+    print(f"\n🕒 Tiempo: {tiempo_actual}")
+    print(f
+
+
+
 import streamlit as st
 
 # Título principal
@@ -213,5 +245,6 @@ st.write(personajes[opcion])
 
 # Mensaje final
 st.success("🎉 ¡Juntos forman un gran equipo lleno de talento y amistad! 🎉")
+
 
 
