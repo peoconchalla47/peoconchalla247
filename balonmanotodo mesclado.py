@@ -190,7 +190,6 @@ st.image("OIP1.jpg")
 
 #LÓGICA DE LA APLICACIÓN
 
-# Programa de control de partido de handball para árbitros
 
 def mostrar_menu():
     print("\n--- PANEL DEL ÁRBITRO ---")
@@ -218,8 +217,45 @@ def registrar_sancion(sanciones, equipos):
 
 def mostrar_marcador(equipos, marcador, tiempo_actual):
     print(f"\n🕒 Tiempo: {tiempo_actual}")
-    print(f
+    print(f"🔢 Marcador: {equipos[0]} {marcador[equipos[0]]} - {marcador[equipos[1]]} {equipos[1]}")
+    print("--------------------------")
 
+def main():
+    print("Bienvenido al Sistema de Control de Partido de Handball 🏐")
+    equipos = [input("Nombre del Equipo A: "), input("Nombre del Equipo B: ")]
+    marcador = {equipos[0]: 0, equipos[1]: 0}
+    sanciones = []
+    tiempo_actual = "Primer Tiempo"
+    partido_activo = True
+
+    while partido_activo:
+        mostrar_menu()
+        opcion = input("Seleccione una opción: ").strip()
+
+        if opcion == "1":
+            registrar_gol(equipos, marcador)
+        elif opcion == "2":
+            registrar_sancion(sanciones, equipos)
+        elif opcion == "3":
+            mostrar_marcador(equipos, marcador, tiempo_actual)
+        elif opcion == "4":
+            if tiempo_actual == "Primer Tiempo":
+                tiempo_actual = "Segundo Tiempo"
+                print("⏱️ Ahora comienza el Segundo Tiempo.")
+            else:
+                print("⚠️ Ya estás en el Segundo Tiempo.")
+        elif opcion == "5":
+            print("🏁 Partido Finalizado.")
+            mostrar_marcador(equipos, marcador, tiempo_actual)
+            print("📋 Sanciones registradas:")
+            for s in sanciones:
+                print(f"- {s['jugador']} ({s['equipo']}) → {s['tipo']}")
+            partido_activo = False
+        else:
+            print("Opción no válida, intente nuevamente.")
+
+if __name__ == "__main__":
+    main()
 
 
 import streamlit as st
@@ -245,6 +281,7 @@ st.write(personajes[opcion])
 
 # Mensaje final
 st.success("🎉 ¡Juntos forman un gran equipo lleno de talento y amistad! 🎉")
+
 
 
 
