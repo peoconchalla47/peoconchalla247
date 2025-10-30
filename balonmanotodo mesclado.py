@@ -15,7 +15,6 @@ st.set_page_config(
 
 # SECCIÓN HOME PAGE
 
-st.image(LOGO_PATH, width=150)
 st.title("GOL-EGO: Tu Guía Rápida de Reglas de Handball")
 st.markdown("---")
 
@@ -189,3 +188,4 @@ st.markdown("---")
 
 
 #LÓGICA DE LA APLICACIÓN
+
